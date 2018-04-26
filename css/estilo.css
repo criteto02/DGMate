@@ -1,0 +1,228 @@
+	/* -ms-transform: rotate(90deg);
+	-webkit-transform: rotate(90deg);
+	transform: rotate(90deg); */
+@font-face {
+	font-family: 'Patua One';
+	src: url("fuente/PatuaOne-Regular.otf");
+}
+/*.vali{border: 1px solid #cc2424 !important;}*/
+
+@font-face {
+	font-family: 'Old Bookshop';
+	src: url("fuente/Old Bookshop HK.ttf");
+}
+* {
+	font-family: 'Patua One', cursive !important;
+}
+img{
+    width: 100% !important;
+    height: 100% !important;
+}
+.white{
+    background-color: white !important;
+}
+.Fprin{
+    width: 100%;
+    height: 250px;
+}
+.Fprin img{
+    width: 100%;
+}
+.center{
+    text-align: center;
+}
+p,h1,h2,h3,h4,h5,h6,span,label{
+    color: white;
+     text-shadow: 1px 1px 5px #000;
+}
+span{
+  font-size: 1.4em;
+}
+a {
+	text-decoration: none;
+}
+/* label{
+    font-size: 20px !important;
+} */
+hr{
+    color: white;
+    width: 70%;
+}
+.photo{
+    margin: auto;
+    width: 70%;
+    box-shadow: 5px 5px 15px #ddd;
+    border-radius: 50%;
+    height: 200px;
+}
+.photo img{
+    border-radius: 50%;
+	width: 100%;
+    height: 100%;
+}
+
+.fondo1 {
+    background-color: #64CEFC !important;
+}
+
+.fondo2 {
+	background-color: #9CDEFC !important;
+}
+.relative{
+    position: relative;
+}
+.color1{
+color: #38dd38 !important;
+}
+.img-registro2 {
+	margin: auto;
+    height: 120px;
+}
+
+.img-registro2 img {
+	width: 100%;
+	height: 100%;
+}
+.ff{
+   /* background-image: url(../img/f.jpg);*/
+    background-color: brown;
+    background-size: 100% 100%;
+}
+.col1{
+    background-color: #2fb92f !important;
+}
+.col2{
+    background-color: #33718d !important;
+}
+.col3{
+    background-color: #bf7f27 !important;
+}
+.col4{
+    background-color: #c64b4b !important;
+}
+.tema {
+    margin: auto;
+    width: 90%;
+    display: block;
+    overflow: hidden;
+	padding:0em 0em 2.5em 0em !important;
+}
+.tema h1{
+    width: 100%;
+    font-size: 1.5em;
+    text-shadow: 2px 2px 15px #000;  
+    color: #ddd;
+    padding: 0em 0em 0em 0em !important;
+    margin: 2em 0em 0em 0em !important;
+    text-align: center;
+}
+.titulo-nivel{
+    text-shadow: 1px 1px 9px #000;  
+    font-size: 3.2em;
+    margin-bottom: 0px;
+}
+.temas {
+    margin-top: 0px;
+    position: relative;
+    width: 50%;
+    float: left;
+    overflow: hidden;
+    height: 160px;
+}
+.btn-nivel {
+margin-top: 7em;
+}
+.img-temas img {
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	top: 0px;
+}
+
+.ui-btn {
+	background-color: white !important;
+}
+.ui-btn:active {
+	color: black !important;
+}
+.ui-btn:focus{
+    color: black !important;
+}
+.img-a img {
+	width: 100%;
+}
+
+p {
+	font-size: 1.1em;
+}
+
+.img-disen img {
+	width: 100%;
+}
+
+.img-disen2 img {
+	width: 100%;
+}
+
+.input-t {
+	text-align: center !important;
+	font-size: 2em;
+}
+
+.m1 {
+	margin: auto;
+	text-align: center;
+}
+
+.ang1,
+.ang2,
+.ang3,
+.ang4,
+.ang5 {
+	width: 100%;
+}
+
+.ang1 img,
+.ang2 img,
+.ang3 img,
+.ang4 img,
+.ang5 img {
+    margin: auto;
+  display: block;
+	width: 90%;
+}
+.img-ang img{
+    padding: 0px;
+    width: 80%;
+    display: block;
+      margin: auto;
+}
+.img-ang {
+  
+    width: 100%;
+    padding: 0px;
+}
+
+#preg17,
+#preg32 {
+	position: relative;
+}
+ .poligono img{
+    width: 95%;
+    margin: auto;
+    height: 100%;
+}
+.poligono {
+	height: 228px; !important;
+    overflow: hidden;
+}
+#tblpoligono{
+    border-radius: 2%;
+    background-color: #FFFFFF !important;
+}
+.user{
+    color: black;
+}
+#divPerfil{
+    
+}

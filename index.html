@@ -1,0 +1,3426 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <link rel="stylesheet" href="js/jquery/jquery.mobile-1.4.5.min.css">
+    <link rel="stylesheet" href="css/estilo.css">
+    <title>DG-Mate</title>
+</head>
+
+<body>
+    <div data-role="page" id="portada" class="ff">
+        <div data-role="content">
+            <h1 class="relative center">Bienvenido</h1>
+            <p class="relative">Aprenderas de una forma didactica las operaciones basicas, la potenciación, interpretar grafica, la comparación, la clasificacion de los ángulos, los poligonos y como determinar un porcentaje. Primero con una breve explicación de su significado, algunos ejemplos para comprender mejor, también prodras hacer ejercicios de prueba, para aplicar lo aprendido.</p>
+            <div class="Fprin">
+                <img src="img/princ.jpg" alt="">
+            </div>
+            <a href="#preinicio" data-rel="popup" class="ui-btn ui-corner-all ui-shadow" data-position-to="window" data-transition="pop">Empezar</a>
+        </div>
+        <div data-role="popup" id="preinicio" class="ui-content ff" data-overlay-theme="b">
+            <div data-role="content">
+                <a href="#" data-rel="back" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+                <a href="#login" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" data-transition="slideup">Iniciar Sesión</a>
+                <p class="center color2">o</p>
+                <a href="#registro" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slidedown">Regístrate</a>
+            </div>
+        </div>
+    </div>
+    <div id="login" data-role="page" class="ff">
+        <div data-role="content">
+            <h1 class="center">Iniciar sesión</h1>
+            <form action="" id="frmlogin" name="frmlogin" method="post">
+                <input type="text" id="user" placeholder="Usuario o Correo electronico" name="user" class="vali">
+                <input type="password" id="passuser" placeholder="Contraseña" name="passuser" class="vali">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <a href="" data-role="button" class="ui-icon-check ui-btn-icon-left ui-btn ui-corner-all ui-shadow" data-transition="slideup" id="conectar">Entrar</a>
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#portada" data-role="button" class="ui-icon-delete ui-btn ui-corner-all ui-shadow ui-btn-icon-left" data-transition="slidedown">Cancelar</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <div id="registro" data-role="page" class="col2">
+        <div data-role="content">
+            <h1 class="center">Regístrate</h1>
+            <form id="frmregistros" name="frmregistros" method="POST" action="">
+                <label for="email">Correo Electronico:</label>
+                <input type="email" id="email" name="email" placeholder="Correo Electronico" class="vali">
+                <label for="nick">Usuario:</label>
+                <input type="text" id="nick" name="nick" required placeholder="Usuario" class="vali">
+                <label for="pass">Contraseña:</label>
+                <input type="password" id="pass" name="pass" required placeholder="Contraseña" class="vali vali2">
+                <label for="pass2">Verificar contraseña</label>
+                <input type="password" id="pass2" required placeholder="Verificar Contraseña" class="vali vali2">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <input type="button" class="ui-btn ui-shadow ui-corner-all ui-icon-check ui-btn-icon-left" value="Listo" data-icon="check" id="btnlisto">
+                    </div>
+                    <div class="ui-block-b">
+                        <a href="#portada" class="ui-icon-delete ui-btn ui-corner-all ui-shadow ui-btn-icon-left" data-transition="slideup">Cancelar</a>
+                    </div>
+                </div>
+            </form>
+
+        </div>
+    </div>
+    <div data-role="page" id="perfil" class="col3">
+        <div class="ui-content">
+            <h1 class="center">Edición de usuario</h1>
+            <h2>Usuario</h2>
+            <label for="nick">Name:</label>
+            <input type="text" id="Pnick">
+            <label for="">Correo electronico:</label>
+            <input type="email" id="Pemail">
+            <input type="checkbox" id="checkContra" name="ccoo">
+            <label for="checkContra">Cambiar contraseña</label>
+            <label for="Ppass" id="txtPp">Password:</label>
+            <input type="password" id="Ppass">
+            <input type="checkbox" id="mC" name="ccoo">
+            <label for="mC" id="mC1">Mostrar contraseña</label>
+            <h2>Photo</h2>
+            <div class="white">
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <img src="img/perfil/8.jpg" alt="">
+                    </div>
+                    <div class="ui-block-b">
+                        <img src="img/perfil/centro.png" alt="">
+                    </div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <img src="img/perfil/cristian12345.png" alt="">
+                    </div>
+                    <div class="ui-block-b">
+                        <img src="img/perfil/critteto0361.jpg" alt="">
+                    </div>
+                </div>
+                <div class="ui-grid-a">
+                    <div class="ui-block-a">
+                        <img src="img/perfil/Critteto0521.jpg" alt="">
+                    </div>
+                    <div class="ui-block-b">
+                        <img src="img/perfil/critteto1255.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn" value="Guardar cambios">
+                </div>
+                <div class="ui-block-b">
+                    <a href="#temas" class="ui-btn ui-corner-all">Cancelar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--10 temas-->
+    <div data-role="page" id="temas">
+        <div data-role="header" data-theme="b" data-position="fixed">
+            <h1 class="center">DG Mate</h1>
+            <a href="#infuser" data-rel="popup" data-position-to="window" data-transition="pop" class="ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right" onclick="Muser()"></a>
+        </div>
+        <div data-role="popup" id="infuser" class="ui-content" data-overlay-theme="b">
+            <div data-role="content">
+                <a href="#" data-rel="back" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+                <div class="photo">
+                    <img src="img/perfil/8.jpg" alt="Photo">
+                </div>
+                <h1 class="center user" id="iduser"></h1>
+                <div>
+                    <span>Configuraciones</span>
+                    <ul>
+                        <li><a href="#perfil" id="btnPerfil">Perfil</a></li>
+                        <li><a href="#">Diseño</a></li>
+                        <li><a href="#">Audio</a></li>
+                    </ul>
+                </div>
+                <a href="#portada" class="ui-btn" data-transition="slidedown">Cerrar Sesion</a>
+            </div>
+        </div>
+        <div class="temas col1">
+            <a href="#n1" class="tema" data-transition="slideup">
+                <h1>Aprender a Sumar</h1>
+            </a>
+        </div>
+        <div class="temas col2">
+            <a href="#n2" class="tema" data-transition="slideup">
+                <h1>Aprender a Multiplicar</h1>
+            </a>
+        </div>
+        <div class="temas col3">
+            <a href="#n3" class="tema" data-transition="slideup">
+                <h1>Aprender a Dividir</h1>
+            </a>
+        </div>
+        <div class="temas col4">
+            <a href="#n4" class="tema" data-transition="slideup">
+                <h1>Aprender a Restar</h1>
+            </a>
+        </div>
+        <div class="temas col1">
+            <a href="#n5" class="tema" data-transition="slideup">
+                <h1>Signos de Comparación</h1>
+            </a>
+        </div>
+        <div class="temas col2">
+            <a href="#n6" class="tema" data-transition="slideup">
+                <h1>Aprender Potenciación</h1>
+            </a>
+        </div>
+        <div class="temas col3">
+            <a href="#n7" class="tema" data-transition="slideup">
+                <h1>Clasificación de los Ángulos</h1>
+            </a>
+        </div>
+        <div class="temas col4">
+            <a href="#n8" class="tema" data-transition="slideup">
+                <h1>Intrepretar Gráficas</h1>
+            </a>
+        </div>
+        <div class="temas col1">
+            <a href="#n9" class="tema" data-transition="slideup">
+                <h1>Aprender sobre Polígonos</h1>
+            </a>
+        </div>
+        <div class="temas col2">
+            <a href="#n10" class="tema" data-transition="slideup">
+                <h1>Aprender a sacar Porcentaje</h1>
+            </a>
+        </div>
+    </div>
+    <!-- pre-Nivel -->
+    <div data-role="page" class="col1" id="n1">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">Suma</h1>
+            <div class="btn-nivel">
+                <a href="#nivel1" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo1" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Ejercicio</a>
+                <a href="#ejercicio1" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="n2">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">Multiplicación</h1>
+            <div class="btn-nivel">
+                <a href="#nivel2" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo4" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Ejercicio</a>
+                <a href="#ejercicio6" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col3" id="n3">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">División</h1>
+            <div class="btn-nivel">
+                <a href="#nivel3" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo7" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Ejercicio</a>
+                <a href="#ejercicio11" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col4" id="n4">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">Resta</h1>
+            <div class="btn-nivel">
+                <a href="#nivel4" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo10" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Ejercicio</a>
+                <a href="#ejercicio16" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col1" id="n5">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">Comparación</h1>
+            <div class="btn-nivel">
+                <a href="#nivel5" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo13" data-transition="slideup" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all">Ejercicio</a>
+                <a href="#ejercicio21" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="n6">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">Potencia</h1>
+            <div class="btn-nivel">
+                <a href="#nivel6" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo16" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Ejercicio</a>
+                <a href="#ejercicio26" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col3" id="n7">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">Ángulos</h1>
+            <div class="btn-nivel">
+                <a href="#nivel7" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo19" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Ejercicio</a>
+                <a href="#ejercicio31" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col4" id="n8">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">Gráficas</h1>
+            <div class="btn-nivel">
+                <a href="#nivel8" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo22" data-transition="slideup" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all">Ejercicio</a>
+                <a href="#ejercicio36" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col1" id="n9">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">Poligonos</h1>
+            <div class="btn-nivel">
+                <a href="#nivel9" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo25" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Ejercicio</a>
+                <a href="#ejercicio41" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="n10">
+        <div data-role="content">
+            <h1 class="center titulo-nivel">Porcentaje</h1>
+            <div class="btn-nivel">
+                <a href="#nivel10" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-transition="slideup">Concepto</a>
+                <a href="#ejemplo28" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Ejercicio</a>
+                <a href="#ejercicio46" class="ui-btn ui-icon-edit ui-btn-icon-left ui-corner-all" data-transition="slideup">Evaluación</a>
+                <a href="#temas" class="ui-corner-all ui-icon-arrow-l ui-btn-icon-left ui-btn" data-transition="slidedown">Volver</a>
+            </div>
+        </div>
+    </div>
+    <!--nivel 1 -->
+    <div data-role="page" id="nivel1" class="col1">
+        <div data-role="panel" id="infusern1" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Informacion del Usuario</h2>
+            <a href="#portada" class="ui-btn" data-transition="slidedown">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-theme="b" data-position="fixed">
+            <a href="#n1" data-role="button" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slidedown">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern1" class="ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h1>Suma</h1>
+            <p>Es la operación matemática que consiste en combinar o añadir dos números o más para obtener una cantidad final o total.</p>
+            <p>Ejemplo: 12 + 8 = 20</p>
+            <div>
+                <img src="img/partesS.jpg">
+            </div>
+            <p><b>Problema:</b> Juan tiene 2 manzanas y 3 naranjas. ¿Cuántas piezas de fruta tiene Juan? Solución : Juan tiene 5 piezas de fruta.</p>
+            <p>Solucion: 2 + 3 = 5</p>
+        </div>
+    </div>
+    <!-- Ejemplos -->
+    <div data-role="page" class="col1" id="ejemplo1">
+        <div data-role="content">
+            <span>1/2</span>
+            <h1 class="center">10</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">+</h1>
+                </div>
+            </div>
+            <h1 class="center">15</h1>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"> </div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt1">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n1" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s1" data-position-to="window" data-transition="slide" onclick="ejemplo1()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta1" class="ui-content col1" data-overlay-theme="b">
+                <h1 class="center" id="cc1"></h1>
+                <a href="#ejemplo2" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt1" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col1" id="ejemplo2">
+        <div data-role="content">
+            <span>2/2</span>
+            <h1 class="center">19</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">+</h1>
+                </div>
+            </div>
+            <h1 class="center">11</h1>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"> </div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt2">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n1" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s2" data-position-to="window" data-transition="slide" onclick="ejemplo2()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta2" class="ui-content col1" data-overlay-theme="b">
+                <h1 class="center" id="cc2"></h1>
+                <a href="#n1" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt2" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" id="ejercicio1" class="col1">
+        <div data-role="content">
+            <span>1/5</span>
+            <h2 class="center">15</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">+</h1>
+                </div>
+            </div>
+            <h2 class="center">20</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg1" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="35" onclick="ejercicio1('35')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="30" onclick="ejercicio1('30')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="15" onclick="ejercicio1('15')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="40" onclick="ejercicio1('40')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n1" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio2" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio2" class="col1">
+        <div data-role="content">
+            <span>2/5</span>
+            <h2 class="center">10</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">+</h1>
+                </div>
+            </div>
+            <h2 class="center">20</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg2" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="21" onclick="ejercicio2('21')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="5" onclick="ejercicio2('5')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="30" onclick="ejercicio2('30')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="19" onclick="ejercicio2('19')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n1" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio3" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio3" class="col1">
+        <div data-role="content">
+            <span>3/5</span>
+            <h2 class="center">11</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">+</h1>
+                </div>
+            </div>
+            <h2 class="center">11</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg3" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="22" onclick="ejercicio3('22')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="25" onclick="ejercicio3('25')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="13" onclick="ejercicio3('13')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="15" onclick="ejercicio3('15')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n1" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div>
+                    <a href="#ejercicio4" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio4" class="col1">
+        <div data-role="content">
+            <span>4/5</span>
+            <h2 class="center">25</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">+</h1>
+                </div>
+            </div>
+            <h2 class="center">20</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg4" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="21" onclick="ejercicio4('21')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="55" onclick="ejercicio4('55')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="45" onclick="ejercicio4('45')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="25" onclick="ejercicio4('25')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n1" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio5" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio5" class="col1">
+        <div data-role="content">
+            <span>5/5</span>
+            <h2 class="center">4</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">+</h1>
+                </div>
+            </div>
+            <h2 class="center">36</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg5" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="11" onclick="ejercicio5('11')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="30" onclick="ejercicio5('30')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="32" onclick="ejercicio5('32')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="40" onclick="ejercicio5('40')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n1" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nivel1resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result1()">Resultado</a>
+                </div>
+            </div>
+            <div id="nivel1resul" data-role="popup" class="ui-content col1" data-overlay-theme="b">
+                <div data-role="content">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right"></a>
+                    <h1>Su resultado es:</h1>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <h5>Correctas</h5>
+                            <h4 id="buenas1" class="center"></h4>
+                        </div>
+                        <div class="ui-block-b">
+                            <h5>Incorrectas</h5>
+                            <h4 id="malas1" class="center"></h4>
+                        </div>
+                        <div class="ui-block-c">
+                            <h5 class="center">Total</h5>
+                            <h4 class="center">5</h4>
+                        </div>
+                    </div>
+                    <a href="#ejercicio1" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Volver a intentar</a>
+                    <a href="#n1" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left" data-transition="slidedown">Final</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nivel 2-->
+    <div data-role="page" id="nivel2" class="col2">
+        <div data-role="panel" id="infusern2" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Nombre del Usuario</h2>
+            <a href="#portada" class="ui-btn">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-theme="b" data-position="fixed">
+            <a href="#n2" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slidedown">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern2" class="ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h1>Multiplicación</h1>
+            <p>Es una operación aritmética de composición que consiste en sumar reiteradamente la primera cantidad tantas veces como indica la segunda.</p>
+            <p>Ejemplo : 3 x 7 = 21</p>
+            <div class="img-disen">
+                <img src="img/partesM.jpg">
+            </div>
+            <p><b>Problema:</b> María necesita huevos para hacer una tortilla. Ha comprado una huevera que tiene 4 filas y tres columnas. ¿Cuántos huevos ha comprado María? Solución: María ha comprado 12 huevos .</p>
+            <p>Solución: 4 x 3 = 12</p>
+        </div>
+    </div>
+    <!-- Ejemplo -->
+    <div data-role="page" class="col2" id="ejemplo4">
+        <div data-role="content">
+            <span>1/2</span>
+            <h1 class="center">9</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">x</h1>
+                </div>
+            </div>
+            <h1 class="center">3</h1>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"> </div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt4">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n2" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s4" data-position-to="window" data-transition="slide" onclick="ejemplo4()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta4" class="ui-content col2" data-overlay-theme="b">
+                <h1 class="center" id="cc4"></h1>
+                <a href="#ejemplo5" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt4" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="ejemplo5">
+        <div data-role="content">
+            <span>2/2</span>
+            <h1 class="center">44</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">x</h1>
+                </div>
+            </div>
+            <h1 class="center">2</h1>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"> </div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt5">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n2" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s5" data-position-to="window" data-transition="slide" onclick="ejemplo5()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta5" class="ui-content col2" data-overlay-theme="b">
+                <h1 class="center" id="cc5"></h1>
+                <a href="#n2" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt5" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" id="ejercicio6" class="col2">
+        <div data-role="content">
+            <span>1/5</span>
+            <h2 class="center">12</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">x</h1>
+                </div>
+            </div>
+            <h2 class="center">3</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg6" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="60" onclick="ejercicio6('60')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="55" onclick="ejercicio6('55')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="36" onclick="ejercicio6('36')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="63" onclick="ejercicio6('63')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n2" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio7" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio7" class="col2">
+        <div data-role="content">
+            <span>2/5</span>
+            <h2 class="center">33</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1>x</h1>
+                </div>
+            </div>
+            <h2 class="center">4</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg7" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="132" onclick="ejercicio7('132')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="155" onclick="ejercicio7('155')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="135" onclick="ejercicio7('135')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="163" onclick="ejercicio7('163')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n2" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio8" data-transition="slideup" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio8" class="col2">
+        <div data-role="content">
+            <span>3/5</span>
+            <h2 class="center">52</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">x</h1>
+                </div>
+            </div>
+            <h2 class="center">3</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg8" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="132" onclick="ejercicio8('132')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="156" onclick="ejercicio8('156')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="135" onclick="ejercicio8('135')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="163" onclick="ejercicio8('163')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n2" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio9" data-transition="slideup" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio9" class="col2">
+        <div data-role="content">
+            <span>4/5</span>
+            <h2 class="center">91</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">x</h1>
+                </div>
+            </div>
+            <h2 class="center">5</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg9" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="200" onclick="ejercicio9('200')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="300" onclick="ejercicio9('300')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="455" onclick="ejercicio9('455')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="468" onclick="ejercicio9('468')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n2" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio10" data-transition="slideup" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio10" class="col2">
+        <div data-role="content">
+            <span>5/5</span>
+            <h2 class="center">83</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">x</h1>
+                </div>
+            </div>
+            <h2 class="center">5</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg10" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="415" onclick="ejercicio10('415')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="430" onclick="ejercicio10('430')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="432" onclick="ejercicio10('432')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="440" onclick="ejercicio10('440')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n2" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nivel2resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result2()">Resultado</a>
+                </div>
+            </div>
+            <div id="nivel2resul" data-role="popup" class="ui-content col2">
+                <div data-role="content">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <h1>Su resultado es:</h1>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <h5>Correctas</h5>
+                            <h4 id="buenas2" class="center"></h4>
+                        </div>
+                        <div class="ui-block-b">
+                            <h5>Incorrectas</h5>
+                            <h4 id="malas2" class="center"></h4>
+                        </div>
+                        <div class="ui-block-c">
+                            <h5 class="center">Total</h5>
+                            <h4 class="center">5</h4>
+                        </div>
+                    </div>
+                    <a href="#ejercicio6" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Volver a intentar</a>
+                    <a href="#n2" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left" data-transition="slidedown">Final</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nivel 3-->
+    <div data-role="page" id="nivel3" class="col3">
+        <div data-role="panel" id="infusern3" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Informacion del Usuario</h2>
+            <a href="#portada" class="ui-btn">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-theme="b" data-position="fixed">
+            <a href="#n3" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slidedown">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern3" class="ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h2>División</h2>
+            <p>Es una operación aritmética de descomposición que consiste en averiguar cuántas veces un número (el divisor ) está contenido en otro número (el dividendo ).</p>
+            <p>Ejemplo: 1545 ÷ 15 = 103</p>
+            <div>
+                <img src="img/partesD.jpg">
+            </div>
+            <p><b>Problema:</b> Pablo tiene 200 canicas. Debe guardarlas en 5 bolsas. ¿Cuántas canicas deberá meter en cada bolsa para que todas tengan la misma cantidad? Solución: Pablo deberá meter 40 canicas en cada bolsa.</p>
+            <p>Solución: 200 ÷ 5 = 40</p>
+        </div>
+    </div>
+    <!-- Ejemplo -->
+    <div data-role="page" class="col3" id="ejemplo7">
+        <div data-role="content">
+            <span>1/2</span>
+            <h1 class="center">10</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">÷</h1>
+                </div>
+            </div>
+            <h1 class="center">2</h1>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"> </div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt7">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n3" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s7" data-position-to="window" data-transition="slide" onclick="ejemplo7()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta7" class="ui-content col3" data-overlay-theme="b">
+                <h1 class="center" id="cc7"></h1>
+                <a href="#ejemplo8" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt7" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col3" id="ejemplo8">
+        <div data-role="content">
+            <span>2/2</span>
+            <h1 class="center">222</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">÷</h1>
+                </div>
+            </div>
+            <h1 class="center">2</h1>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"> </div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt8">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n3" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s8" data-position-to="window" data-transition="slide" onclick="ejemplo8()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta8" class="ui-content col3" data-overlay-theme="b">
+                <h1 class="center" id="cc8"></h1>
+                <a href="#n3" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt8" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" id="ejercicio11" class="col3">
+        <div data-role="content">
+            <span>1/5</span>
+            <h2 class="center">12</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">÷</h1>
+                </div>
+            </div>
+            <h2 class="center">3</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg11" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="6" onclick="ejercicio11('6')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="5" onclick="ejercicio11('5')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="3" onclick="ejercicio11('3')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="4" onclick="ejercicio11('4')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n3" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio12" data-transition="slideup" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio12" class="col3">
+        <div data-role="content">
+            <span>2/5</span>
+            <h2 class="center">45</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">÷</h1>
+                </div>
+            </div>
+            <h2 class="center">5</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg12" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="9" onclick="ejercicio12('9')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="15" onclick="ejercicio12('15')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="7" onclick="ejercicio12('7')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="8" onclick="ejercicio12('8')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n3" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio13" data-transition="slideup" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio13" class="col3">
+        <div data-role="content">
+            <span>3/5</span>
+            <h2 class="center">50</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">÷</h1>
+                </div>
+            </div>
+            <h2 class="center">2</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg13" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="26" onclick="ejercicio13('26')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="25" onclick="ejercicio13('25')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="23" onclick="ejercicio13('23')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="24" onclick="ejercicio13('24')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n3" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio14" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio14" class="col3">
+        <div data-role="content">
+            <span>4/5</span>
+            <h2 class="center">100</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">÷</h1>
+                </div>
+            </div>
+            <h2 class="center">4</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg14" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="20" onclick="ejercicio14('20')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="25" onclick="ejercicio14('25')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="23" onclick="ejercicio14('23')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="24" onclick="ejercicio14('24')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n3" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio15" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio15" class="col3">
+        <div data-role="content">
+            <span>5/5</span>
+            <h2 class="center">80</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">÷</h1>
+                </div>
+            </div>
+            <h2 class="center">5</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg15" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="15" onclick="ejercicio15('15')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="17" onclick="ejercicio15('17')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="16" onclick="ejercicio15('16')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="18" onclick="ejercicio15('18')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n3" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nivel3resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result3()">Resultado</a>
+                </div>
+            </div>
+            <div id="nivel3resul" data-role="popup" class="ui-content col3">
+                <div data-role="content">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <h1>Su resultado es:</h1>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <h5>Correctas</h5>
+                            <h4 id="buenas3" class="center"></h4>
+                        </div>
+                        <div class="ui-block-b">
+                            <h5>Incorrectas</h5>
+                            <h4 id="malas3" class="center"></h4>
+                        </div>
+                        <div class="ui-block-c">
+                            <h5 class="center">Total</h5>
+                            <h4 class="center">5</h4>
+                        </div>
+                    </div>
+                    <a href="#ejercicio11" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()">Volver a intentar</a>
+                    <a href="#n3" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left">Final</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- Nivel 4-->
+    <div data-role="page" id="nivel4" class="col4">
+        <div data-role="panel" id="infusern4" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Informacion del Usuario</h2>
+            <a href="#portada" class="ui-btn">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-theme="b" data-position="fixed">
+            <a href="#n4" data-role="button" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slide" data-direction="reverse">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern4" class=" ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h1>Resta</h1>
+            <p>Se trata de una operación de descomposición que consiste en, dada cierta cantidad, eliminar una parte de ella y el resultado se conoce como diferencia.</p>
+            <p>Ejemplo: 15 - 7 = 8</p>
+            <div>
+                <img src="img/partesR.jpg">
+            </div>
+            <p><b>Problema:</b> Irene tiene 5 lapiceros. Cuatro de ellos tienen un sacapuntas como capucha. ¿Cuántos lapiceros tiene Irene sin sacapuntas? Solución: Irene tiene 1 lápiz sin sacapuntas.</p>
+            <p>Solucion: 5 - 4 = 1</p>
+        </div>
+    </div>
+    <!-- Ejemplo -->
+    <div data-role="page" class="col4" id="ejemplo10">
+        <div data-role="content">
+            <span>1/2</span>
+            <h1 class="center">20</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">-</h1>
+                </div>
+            </div>
+            <h1 class="center">14</h1>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"> </div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt10">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n4" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s10" data-position-to="window" data-transition="slide" onclick="ejemplo10()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta10" class="ui-content col4" data-overlay-theme="b">
+                <h1 class="center" id="cc10"></h1>
+                <a href="#ejemplo11" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt10" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col4" id="ejemplo11">
+        <div data-role="content">
+            <span>2/2</span>
+            <h1 class="center">15</h1>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">-</h1>
+                </div>
+            </div>
+            <h1 class="center">7</h1>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"> </div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt11">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n4" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s11" data-position-to="window" data-transition="slide" onclick="ejemplo11()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta11" class="ui-content col4" data-overlay-theme="b">
+                <h1 class="center" id="cc11"></h1>
+                <a href="#n4" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt11" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" id="ejercicio16" class="col4">
+        <div data-role="content">
+            <span>1/5</span>
+            <h2 class="center">41</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">-</h1>
+                </div>
+            </div>
+            <h2 class="center">22</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg16" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="20" onclick="ejercicio16('20')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="25" onclick="ejercicio16('25')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="23" onclick="ejercicio16('23')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="19" onclick="ejercicio16('19')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n4" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio17" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio17" class="col4">
+        <div data-role="content">
+            <span>2/5</span>
+            <h2 class="center">91</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">-</h1>
+                </div>
+            </div>
+            <h2 class="center">39</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg17" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="20" onclick="ejercicio17('20')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="52" onclick="ejercicio17('52')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="23" onclick="ejercicio17('23')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="69" onclick="ejercicio17('69')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n4" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio18" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio18" class="col4">
+        <div data-role="content">
+            <span>3/5</span>
+            <h2 class="center">620</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">-</h1>
+                </div>
+            </div>
+            <h2 class="center">93</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg18" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="520" onclick="ejercicio18('520')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="552" onclick="ejercicio18('552')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="523" onclick="ejercicio18('523')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="527" onclick="ejercicio18('527')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n4" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio19" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio19" class="col4">
+        <div data-role="content">
+            <span>4/5</span>
+            <h2 class="center">583</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">-</h1>
+                </div>
+            </div>
+            <h2 class="center">312</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg19" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="271" onclick="ejercicio19('271')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="252" onclick="ejercicio19('252')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="223" onclick="ejercicio19('223')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="269" onclick="ejercicio19('269')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n4" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio20" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio20" class="col4">
+        <div data-role="content">
+            <span>5/5</span>
+            <h2 class="center">648</h2>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <h1 class="center">-</h1>
+                </div>
+            </div>
+            <h2 class="center">324</h2>
+            <hr>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" readonly id="preg20" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="315" onclick="ejercicio20('315')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="317" onclick="ejercicio20('317')">
+                </div>
+            </div>
+            <div class="ui-grid-a btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value="324" onclick="ejercicio20('324')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="318" onclick="ejercicio20('318')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n4" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nivel4resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result4()">Resultado</a>
+                </div>
+            </div>
+            <div id="nivel4resul" data-role="popup" class="ui-content col4">
+                <div data-role="content">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <h1>Su resultado es:</h1>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <h5>Correctas</h5>
+                            <h4 id="buenas4" class="center"></h4>
+                        </div>
+                        <div class="ui-block-b">
+                            <h5>Incorrectas</h5>
+                            <h4 id="malas4" class="center"></h4>
+                        </div>
+                        <div class="ui-block-c">
+                            <h5 class="center">Total</h5>
+                            <h4 class="center">5</h4>
+                        </div>
+                    </div>
+                    <a href="#ejercicio16" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Volver a intentar</a>
+                    <a href="#n4" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left" data-transition="slidedown">Final</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nivel 5-->
+    <div data-role="page" id="nivel5" class="col1">
+        <div data-role="panel" id="infusern5" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Informacion del Usuario</h2>
+            <a href="#portada" class="ui-btn">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-theme="b" data-position="fixed">
+            <a href="#n5" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slide" data-direction="reverse">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern5" class=" ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h1>Comparaciones</h1>
+            <div>
+                <img src="img/png/igual.png" alt="">
+            </div>
+            <p>El primero que lo empezo a usar fue el médico y matemático Robert Recorde, quien explicó que no hay dos cosas que puedan ser más iguales que dos líneas paralelas. Por eso empezó a usar este símbolo "=" para representar la igualdad:</p>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <img src="img/png/igual2.png" alt="">
+                </div>
+                <div class="ui-block-b">
+                    <h4 align="right">dos líneas paralelas</h4>
+                </div>
+            </div>
+            <p>Ejemplo: 5 = 5 , 7 + 3 = 10 , x = x</p>
+            <div class="ui-grid-a">
+                <div class="ui-block-a img-disen2">
+                    <img src="img/png/mayor.png" alt="">
+                </div>
+                <div class="ui-block-b img-disen2">
+                    <img src="img/png/menor.png" alt="">
+                </div>
+            </div>
+            <p>los símbolos de desigualdad más conocidos son: “mayor que” y "menor que" Con ellos podemos hacer comparaciones.</p>
+            <p>La apertura grande siempre señala al elemento más grande, y la terminación más pequeña, la punta, al más pequeño. De esta manera es más fácil recordarlo.</p>
+            <p>Ejemplo:</p>
+            <p>20 > 15 Veinte es mayor que quience</p>
+            <code><p>12 < 13 Doce es menor que trece </p> </code>
+            <div class="img-disen2">
+                <img src="img/png/imm.png" alt="">
+            </div>
+        </div>
+    </div>
+    <!-- Ejemplo -->
+    <div data-role="page" class="col1" id="ejemplo13">
+        <div data-role="content">
+            <span>1/2</span>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h1 class="center">20</h1>
+                </div>
+                <div class="ui-block-b">
+                    <input type="text" class="input-t" readonly id="rt13">
+                </div>
+                <div class="ui-block-c">
+                    <h1 class="center">15</h1>
+                </div>
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <label for="m1">></label>
+                    <input type="radio" id="m1" name="e13" onclick="ejemplo13m('>')">
+                </div>
+                <div class="ui-block-b">
+                    <label for="m2">=</label>
+                    <input type="radio" id="m2" name="e13" onclick="ejemplo13m('=')">
+                </div>
+                <div class="ui-block-c">
+                    <label for="m3"><</label>
+                    <input type="radio" name="e13" id="m3" onclick="ejemplo13m('<')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s13" data-position-to="window" data-transition="slide" onclick="ejemplo13()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta13" class="ui-content col1" data-overlay-theme="b">
+                <h1 class="center" id="cc13"></h1>
+                <a href="#ejemplo14" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt13" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col1" id="ejemplo14">
+        <div data-role="content">
+            <span>2/2</span>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h1 class="center">30</h1>
+                </div>
+                <div class="ui-block-b">
+                    <input type="text" class="input-t" readonly id="rt14">
+                </div>
+                <div class="ui-block-c">
+                    <h1 class="center">55</h1>
+                </div>
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <label for="m4">></label>
+                    <input type="radio" id="m4" name="e14" onclick="ejemplo14m('>')">
+                </div>
+                <div class="ui-block-b">
+                    <label for="m5">=</label>
+                    <input type="radio" id="m5" name="e14" onclick="ejemplo14m('=')">
+                </div>
+                <div class="ui-block-c">
+                    <label for="m6"></label>
+                    <input type="radio" name="e14" id="m6" onclick="ejemplo14m('<')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s14" data-position-to="window" data-transition="slide" onclick="ejemplo14()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta14" class="ui-content col1" data-overlay-theme="b">
+                <h1 class="center" id="cc14"></h1>
+                <a href="#n5" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt14" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" id="ejercicio21" class="col1">
+        <div data-role="content">
+            <span>1/5</span>
+            <h1 class="center">Comparar</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h2 class="center">150</h2>
+                </div>
+                <div class="ui-block-b">
+                    <input type="text" id="preg21" readonly class="input-t">
+                </div>
+                <div class="ui-block-c">
+                    <h2 class="center">120</h2>
+                </div>
+            </div>
+            <div class="ui-grid-b btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value=">" onclick="ejercicio21('>')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="=" onclick="ejercicio21('=')">
+                </div>
+                <div class="ui-block-c">
+                    <input type="button" class="ui-btn ui-corner-all" value="<" onclick="ejercicio21('<')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio22" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio22" class="col1">
+        <div data-role="content">
+            <span>2/5</span>
+            <h1 class="center">Comparar</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h2 class="center">520</h2>
+                </div>
+                <div class="ui-block-b">
+                    <input type="text" id="preg22" readonly class="input-t">
+                </div>
+                <div class="ui-block-c">
+                    <h2 class="center">400</h2>
+                </div>
+            </div>
+            <div class="ui-grid-b btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value=">" onclick="ejercicio22('>')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="=" onclick="ejercicio22('=')">
+                </div>
+                <div class="ui-block-c">
+                    <input type="button" class="ui-btn ui-corner-all" value="<" onclick="ejercicio22('<')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio23" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio23" class="col1">
+        <div data-role="content">
+            <span>3/5</span>
+            <h1 class="center">Comparar</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h2 class="center">20</h2>
+                </div>
+                <div class="ui-block-b">
+                    <input type="text" id="preg23" readonly class="input-t">
+                </div>
+                <div class="ui-block-c">
+                    <h2 class="center">40</h2>
+                </div>
+            </div>
+            <div class="ui-grid-b btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value=">" onclick="ejercicio23('>')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="=" onclick="ejercicio23('=')">
+                </div>
+                <div class="ui-block-c">
+                    <input type="button" class="ui-btn ui-corner-all" value="<" onclick="ejercicio23('<')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio24" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio24" class="col1">
+        <div data-role="content">
+            <span>4/5</span>
+            <h1 class="center">Comparar</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h2 class="center">140</h2>
+                </div>
+                <div class="ui-block-b">
+                    <input type="text" id="preg24" readonly class="input-t">
+                </div>
+                <div class="ui-block-c">
+                    <h2 class="center">140</h2>
+                </div>
+            </div>
+            <div class="ui-grid-b btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value=">" onclick="ejercicio24('>')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="=" onclick="ejercicio24('=')">
+                </div>
+                <div class="ui-block-c">
+                    <input type="button" class="ui-btn ui-corner-all" value="<" onclick="ejercicio24('<')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio25" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio25" class="col1">
+        <div data-role="content">
+            <span>5/5</span>
+            <h1 class="center">Comparar</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h2 class="center">10</h2>
+                </div>
+                <div class="ui-block-b">
+                    <input type="text" id="preg25" readonly class="input-t">
+                </div>
+                <div class="ui-block-c">
+                    <h2 class="center">10</h2>
+                </div>
+            </div>
+            <div class="ui-grid-b btnR">
+                <div class="ui-block-a">
+                    <input type="button" class="ui-btn ui-corner-all" value=">" onclick="ejercicio25('>')">
+                </div>
+                <div class="ui-block-b">
+                    <input type="button" class="ui-btn ui-corner-all" value="=" onclick="ejercicio25('=')">
+                </div>
+                <div class="ui-block-c">
+                    <input type="button" class="ui-btn ui-corner-all" value="<" onclick="ejercicio25('<')">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nivel5resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result5()">Resultado</a>
+                </div>
+            </div>
+            <div id="nivel5resul" data-role="popup" class="ui-content col1">
+                <div data-role="content">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <h1>Su resultado es:</h1>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <h5>Correctas</h5>
+                            <h4 id="buenas5" class="center"></h4>
+                        </div>
+                        <div class="ui-block-b">
+                            <h5>Incorrectas</h5>
+                            <h4 id="malas5" class="center"></h4>
+                        </div>
+                        <div class="ui-block-c">
+                            <h5 class="center">Total</h5>
+                            <h4 class="center">5</h4>
+                        </div>
+                    </div>
+                    <a href="#ejercicio21" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Volver a intentar</a>
+                    <a href="#n5" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left" data-transition="slidedown">Final</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--nivel 6-->
+    <div data-role="page" id="nivel6" class="col2">
+        <div data-role="panel" id="infusern6" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Informacion del Usuario</h2>
+            <a href="#portada" class="ui-btn">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-theme="b" data-position="fixed">
+            <a href="#n6" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slide" data-direction="reverse">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern6" class="ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h1>Potencia</h1>
+            <p>Las potencias son una manera abreviada de escribir una multiplicación formada por varios números iguales. Son muy útiles para simplificar multiplicaciones donde se repite el mismo número.</p>
+            <p>Las potencias están formadas por la base y por el exponente. La base es el número que se está multiplicando varias veces y el exponente es el número de veces que se multiplica la base.</p>
+            <p>El número de la base de escribe de forma normal, y el número de la potencia se escribe más pequeño que la base en la parte superior derecha. (x²)</p>
+            <div class="img-disen">
+                <img src="img/png/potencias.png" alt="">
+            </div>
+            <P>Ejemplo: 5² = 25 es lo mismo que 5 x 5 = 25 </P>
+            <P>El número que se multiplica es: 5 –> BASE</P>
+            <p>Se repite la base 2 –> EXPONENTE</p>
+            <p>Escribiendo la potencia quedaría así: 5²</p>
+        </div>
+    </div>
+    <!-- Ejemplo -->
+    <div data-role="page" class="col2" id="ejemplo16">
+        <div data-role="content">
+            <span>1/2</span>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h1 class="center">4<sup>3</sup></h1>
+                </div>
+                <div class="ui-block-b">
+                    <h1 class="center">=</h1>
+                </div>
+                <div class="ui-block-c">
+                    <input type="number" id="rt16" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n6" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s16" data-position-to="window" data-transition="slide" onclick="ejemplo16()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta16" class="ui-content col2" data-overlay-theme="b">
+                <h1 class="center" id="cc16"></h1>
+                <a href="#ejemplo17" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt16" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="ejemplo17">
+        <div data-role="content">
+            <span>2/2</span>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h1 class="center">2<sup>3</sup></h1>
+                </div>
+                <div class="ui-block-b">
+                    <h1 class="center">=</h1>
+                </div>
+                <div class="ui-block-c">
+                    <input type="number" id="rt17" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n6" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s17" data-position-to="window" data-transition="slide" onclick="ejemplo17()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta17" class="ui-content col2" data-overlay-theme="b">
+                <h1 class="center" id="cc17"></h1>
+                <a href="#n6" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt17" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" id="ejercicio26" class="col2">
+        <div data-role="content">
+            <span>1/5</span>
+            <h1 class="center">Potencia</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h1 class="center">4<sup>4</sup></h1>
+                </div>
+                <div class="ui-block-b">
+                    <h2 class="center">=</h2>
+                </div>
+                <div class="ui-block-c">
+                    <input type="number" id="preg26" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all ui-btn" onclick="ejercicio26()">
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="nuevo26()">Editar</a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio27" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio27" class="col2">
+        <div data-role="content">
+            <span>2/5</span>
+            <h1 class="center">Potencia</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h1 class="center">2<sup>6</sup></h1>
+                </div>
+                <div class="ui-block-b">
+                    <h2 class="center">=</h2>
+                </div>
+                <div class="ui-block-c">
+                    <input type="number" id="preg27" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all  ui-btn" onclick="ejercicio27()">
+                </div>
+                <div class="ui-block-b"><a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="nuevo27()">Editar</a></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio28" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio28" class="col2">
+        <div data-role="content">
+            <span>3/5</span>
+            <h1 class="center">Potencia</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h1 class="center">5<sup>3</sup></h1>
+                </div>
+                <div class="ui-block-b">
+                    <h2 class="center">=</h2>
+                </div>
+                <div class="ui-block-c">
+                    <input type="number" id="preg28" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all  ui-btn" onclick="ejercicio28()">
+                </div>
+                <div class="ui-block-b"><a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="nuevo28()">Editar</a></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio29" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio29" class="col2">
+        <div data-role="content">
+            <span>4/5</span>
+            <h1 class="center">Potencia</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h1 class="center">9<sup>3</sup></h1>
+                </div>
+                <div class="ui-block-b">
+                    <h2 class="center">=</h2>
+                </div>
+                <div class="ui-block-c">
+                    <input type="number" id="preg29" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all  ui-btn" onclick="ejercicio29()">
+                </div>
+                <div class="ui-block-b"><a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="nuevo()">Editar</a></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio30" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio30" class="col2">
+        <div data-role="content">
+            <span>5/5</span>
+            <h1 class="center">Potencia</h1>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h1 class="center">8<sup>3</sup></h1>
+                </div>
+                <div class="ui-block-b">
+                    <h2 class="center">=</h2>
+                </div>
+                <div class="ui-block-c">
+                    <input type="number" id="preg30" class="input-t">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all  ui-btn" onclick="ejercicio30()">
+                </div>
+                <div class="ui-block-b"><a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="nuevo()">Editar</a></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n5" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nivel6resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result6()">Resultado</a>
+                </div>
+            </div>
+            <div id="nivel6resul" data-role="popup" class="ui-content col2">
+                <div data-role="content">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <h1>Su resultado es:</h1>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <h4>Correctas</h4>
+                            <h4 id="buenas6" class="center"></h4>
+                        </div>
+                        <div class="ui-block-b">
+                            <h4>Incorrectas</h4>
+                            <h4 id="malas6" class="center"></h4>
+                        </div>
+                        <div class="ui-block-c">
+                            <h5 class="center">Total</h5>
+                            <h4 class="center">5</h4>
+                        </div>
+                    </div>
+                    <a href="#ejercicio26" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Volver a intentar</a>
+                    <a href="#n6" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left" data-transition="slidedown">Final</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nivel 7-->
+    <div id="nivel7" data-role="page" class="col3">
+        <div data-role="panel" id="infusern7" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Informacion del Usuario</h2>
+            <a href="#portada" class="ui-btn">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#n7" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slide" data-direction="reverse">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern7" class="ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h1 class="center">Ángulos</h1>
+            <p>Se llama ángulo a la parte del plano delimitada por dos semirrectas que parten de un mismo punto llamado vértice. A cada semirrecta se le llama lado del ángulo.</p>
+            <div class="img-disen">
+                <img src="img/png/angulo.jpg" alt="">
+            </div>
+            <p>- Los lados del ángulo son las semirrectas que lo forman. <br> - El vértice del ángulo es el punto común que es origen de los lados.</p>
+            <p>Los ángulos se clasifican en 3 clases:</p>
+            <div class="img-disen">
+                <img src="img/png/angulos_2.jpg" alt="">
+            </div>
+            <div data-role="collapsibleset" data-theme="b">
+                <div data-role="collapsible">
+                    <h1>Ángulo rectos</h1>
+                    <p>Un ángulo recto es un ángulo que mide exactamente 90°. Si te das cuenta, en la esquina del ángulo hay un símbolo especial, una caja. Si ves ese símbolo, el ángulo es recto. No se suele escribir el 90°. Si ves la caja en la esquina ya te están diciendo que es un ángulo recto.</p>
+                    <div class="img-disen">
+                        <img src="img/png/rectos.jpg" alt="">
+                    </div>
+                    <p>Un ángulo recto puede estar en cualquier orientación o giro, lo que importa es que el ángulo interior sea 90°</p>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Ángulo agudo</h1>
+                    <p>Un ángulo agudo es un ángulo que mide menos de 90°</p>
+                    <div class="img-disen">
+                        <img src="img/png/agudos.jpg" alt="">
+                    </div>
+                </div>
+                <div data-role="collapsible">
+                    <h1>Ángulo obtuso</h1>
+                    <p>Un ángulo obtuso es un ángulo que mide más de 90° pero menos de 180°.</p>
+                    <div class="img-disen">
+                        <img src="img/png/obtusos.jpg" alt="">
+                    </div>
+                </div>
+            </div>
+            <p>- Agudo: que son los que miden menos de 90° <br> - Recto: que son los que miden 90° <br> - Obtuso: que son los que miden más de 90° </p>
+        </div>
+    </div>
+    <!-- Ejemplo -->
+    <div data-role="page" class="col3" id="ejemplo19">
+        <div data-role="content">
+            <span>1/2</span>
+            <div class="img-ang">
+                <img src="img/png/a2.png" alt="">
+            </div>
+            <label for="agu1">Agudo</label>
+            <input type="radio" id="agu1" name="ejer1">
+            <label for="rect1">Recto</label>
+            <input type="radio" id="rect1" name="ejer1">
+            <label for="obt1">Obtuso</label>
+            <input type="radio" id="obt1" name="ejer1">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n7" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s19" data-position-to="window" data-transition="slide" onclick="ejemplo19()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta19" class="ui-content col3" data-overlay-theme="b">
+                <h1 class="center" id="cc19"></h1>
+                <a href="#ejemplo20" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt19" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col3" id="ejemplo20">
+        <div data-role="content">
+            <span>2/2</span>
+            <div class="img-ang">
+                <img src="img/png/a5.png" alt="">
+            </div>
+            <label for="agu2">Agudo</label>
+            <input type="radio" id="agu2" name="ejer2">
+            <label for="rect2">Recto</label>
+            <input type="radio" id="rect2" name="ejer2">
+            <label for="obt2">Obtuso</label>
+            <input type="radio" id="obt2" name="ejer2">
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n7" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s20" data-position-to="window" data-transition="slide" onclick="ejemplo20()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta20" class="ui-content col3" data-overlay-theme="b">
+                <h1 class="center" id="cc20"></h1>
+                <a href="#n7" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt20" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" id="ejercicio31" class="col3">
+        <div data-role="content">
+            <span>1/5</span>
+            <h2 class="center">¿Que tipo de ángulo es?</h2>
+            <div class="ang1">
+                <img src="img/png/a1.png" alt="">
+            </div>
+        </div>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <input type="radio" name="a1" id="recto1">
+                <label for="recto1">Recto</label>
+            </div>
+            <div class="ui-block-b">
+                <input type="radio" name="a1" id="obtuso1">
+                <label for="obtuso1">Obtuso</label>
+            </div>
+            <div class="ui-block-c">
+                <input type="radio" name="a1" id="agudo1">
+                <label for="agudo1">Agudo</label>
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#n7" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#ejercicio32" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+            </div>
+        </div>
+
+    </div>
+    <div data-role="page" id="ejercicio32" class="col3">
+        <div data-role="content">
+            <span>2/5</span>
+            <h2 class="center">¿Que tipo de ángulo es?</h2>
+            <div class="ang2">
+                <img src="img/png/a2.png" alt="">
+            </div>
+        </div>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <input type="radio" name="a2" id="recto2">
+                <label for="recto2">Recto</label>
+            </div>
+            <div class="ui-block-b">
+                <input type="radio" name="a2" id="obtuso2">
+                <label for="obtuso2">Obtuso</label>
+            </div>
+            <div class="ui-block-c">
+                <input type="radio" name="a2" id="agudo2">
+                <label for="agudo2">Agudo</label>
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#n7" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#ejercicio33" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio33" class="col3">
+        <div data-role="content">
+            <span>3/5</span>
+            <h2 class="center">¿Que tipo de ángulo es?</h2>
+            <div class="ang3">
+                <img src="img/png/a3.png" alt="">
+            </div>
+        </div>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <input type="radio" name="a3" id="recto3">
+                <label for="recto3">Recto</label>
+            </div>
+            <div class="ui-block-b">
+                <input type="radio" name="a3" id="obtuso3">
+                <label for="obtuso3">Obtuso</label>
+            </div>
+            <div class="ui-block-c">
+                <input type="radio" name="a3" id="agudo3">
+                <label for="agudo3">Agudo</label>
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#n7" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#ejercicio34" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio34" class="col3">
+        <div data-role="content">
+            <span>4/5</span>
+            <h2 class="center">¿Que tipo de ángulo es?</h2>
+            <div class="ang4">
+                <img src="img/png/a4.png" alt="">
+            </div>
+        </div>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <input type="radio" name="a4" id="recto4">
+                <label for="recto4">Recto</label>
+            </div>
+            <div class="ui-block-b">
+                <input type="radio" name="a4" id="obtuso4">
+                <label for="obtuso4">Obtuso</label>
+            </div>
+            <div class="ui-block-c">
+                <input type="radio" name="a4" id="agudo4">
+                <label for="agudo4">Agudo</label>
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#n7" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#ejercicio35" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio35" class="col3">
+        <div data-role="content">
+            <span>5/5</span>
+            <h2 class="center">¿Que tipo de ángulo es?</h2>
+            <div class="ang5">
+                <img src="img/png/a5.png" alt="">
+            </div>
+        </div>
+        <div class="ui-grid-b">
+            <div class="ui-block-a">
+                <input type="radio" name="a5" id="recto5">
+                <label for="recto5">Recto</label>
+            </div>
+            <div class="ui-block-b">
+                <input type="radio" name="a5" id="obtuso5">
+                <label for="obtuso5">Obtuso</label>
+            </div>
+            <div class="ui-block-c">
+                <input type="radio" name="a5" id="agudo5">
+                <label for="agudo5">Agudo</label>
+            </div>
+        </div>
+        <div class="ui-grid-a">
+            <div class="ui-block-a">
+                <a href="#n7" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+            </div>
+            <div class="ui-block-b">
+                <a href="#nivel7resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result7()">Resultado</a>
+            </div>
+        </div>
+        <div id="nivel7resul" data-role="popup" class="ui-content col3">
+            <div data-role="content">
+                <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                <h1>Su resultado es:</h1>
+                <div class="ui-grid-b">
+                    <div class="ui-block-a">
+                        <h5>Correctas</h5>
+                        <h4 id="buenas7" class="center"></h4>
+                    </div>
+                    <div class="ui-block-b">
+                        <h5>Incorrectas</h5>
+                        <h4 id="malas7" class="center"></h4>
+                    </div>
+                    <div class="ui-block-c">
+                        <h5 class="center">Total</h5>
+                        <h4 class="center">5</h4>
+                    </div>
+                </div>
+                <a href="#ejercicio31" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Volver a intentar</a>
+                <a href="#n7" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!--nivel 8-->
+    <div data-role="page" id="nivel8" class="col4">
+        <div data-role="panel" id="infusern8" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Informacion del Usuario</h2>
+            <a href="#portada" class="ui-btn">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#n8" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slide" data-direction="reverse">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern8" class=" ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h1>Gráficas</h1>
+            <div class="img-disen">
+                <img src="img/grafica-0.jpg" alt="">
+            </div>
+            <p>Un gráfico representa datos a través de símbolos, formas o líneas.</p>
+            <p><b>Extraer datos:</b> Esto significa en relacionar algún tipo de elemento al grafico que no comprendamos. Por ejemplo, al leer un diagrama de barras tendremos que entender la frecuencia asociada a un valor variable</p>
+            <p><b>Extraer tendencias:</b>Esto significa percibir en el grafico una relación entre los datos que nos permitan hacer una predicción de lo que va a suceder.</p>
+            <p><b>Analizar la estructura de los datos:</b> Esto significa comparar los agrupamientos y tendencias efectuando pequeñas predicciones. Un ejemplo claro es cuando se presenta un grafico de barras con dos distribuciones, analizando sus diferencias en promedios y dispersión.</p>
+            <p><b>Texto y gráfico juntos:</b> Si se dispone de un texto la tarea se hace mucho más simple, por ende para poder leer el grafico sin muchas complicaciones lo mejor de todo es disponer del texto para entender representaciones que no comprendamos a simple vista.</p>
+        </div>
+    </div>
+    <!-- Ejemplo -->
+    <div data-role="page" class="col4" id="ejemplo22">
+        <div data-role="content">
+            <span>1/2</span>
+            <div class="img-disen">
+                <img src="img/grafica-2.JPG" alt="">
+            </div>
+            <h3 class="center">¿Quién tuvo menos citas en el medio?</h3>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <label for="g1">Lola</label>
+                    <input type="radio" id="g1" name="graf1">
+                </div>
+                <div class="ui-block-b">
+                    <label for="g2">Paula</label>
+                    <input type="radio" id="g2" name="graf1">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <label for="g3">Ramón</label>
+                    <input type="radio" id="g3" name="graf1">
+                </div>
+                <div class="ui-block-b">
+                    <label for="g4">Rául</label>
+                    <input type="radio" id="g4" name="graf1">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n8" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s22" data-position-to="window" data-transition="slide" onclick="ejemplo22()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta22" class="ui-content col4" data-overlay-theme="b">
+                <h1 class="center" id="cc22"></h1>
+                <a href="#ejemplo23" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt22" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col4" id="ejemplo23">
+        <div data-role="content">
+            <span>2/2</span>
+            <div class="img-disen">
+                <img src="img/grafica-2.JPG" alt="">
+            </div>
+            <h3 class="center">¿Quién tuvo más citas en el medio?</h3>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <label for="g5">Lola</label>
+                    <input type="radio" id="g5" name="graf2">
+                </div>
+                <div class="ui-block-b">
+                    <label for="g6">Paula</label>
+                    <input type="radio" id="g6" name="graf2">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <label for="g7">Ramón</label>
+                    <input type="radio" id="g7" name="graf2">
+                </div>
+                <div class="ui-block-b">
+                    <label for="g8">Rául</label>
+                    <input type="radio" id="g8" name="graf2">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n8" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s23" data-position-to="window" data-transition="slide" onclick="ejemplo23()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta23" class="ui-content col4" data-overlay-theme="b">
+                <h1 class="center" id="cc23"></h1>
+                <a href="#n8" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt23" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" id="ejercicio36" class="col4">
+        <div data-role="content">
+            <span>1/5</span>
+            <div class="img-disen">
+                <img src="img/grafica-1.JPG" alt="Grafica 1">
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h4>Cuántos libros</h4>
+                </div>
+                <div class="ui-block-b">
+                    <h4>leyó Julia</h4>
+                </div>
+                <div class="ui-block-c">
+                    <input type="number" id="preg36">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all  ui-btn" onclick="ejercicio36()">
+                </div>
+                <div class="ui-block-b"><a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="nuevo36()">Editar</a></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n8" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio37" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio37" class="col4">
+        <div data-role="content">
+            <span>2/5</span>
+            <div class="img-disen">
+                <img src="img/grafica-2.JPG" alt="Grafica 2">
+            </div>
+            <div class="ui-grid-b">
+                <div class="ui-block-a">
+                    <h4>Cuántas citas</h4>
+                </div>
+                <div class="ui-block-b">
+                    <h4>tuvo Paula</h4>
+                </div>
+                <div class="ui-block-c">
+                    <input type="number" id="preg37">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all  ui-btn" onclick="ejercicio37()">
+                </div>
+                <div class="ui-block-b"><a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="nuevo37()">Editar</a></div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n8" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio38" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio38" class="col4">
+        <div data-role="content">
+            <span>3/5</span>
+            <div class="img-disen">
+                <img src="img/grafica-3.JPG" alt="Grafica 3">
+            </div>
+            <h4 class="center">¿Quien compro mas regalos?</h4>
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" id="preg38" name="g3">
+                    <label for="preg38">Jose</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" id="p1" name="g3">
+                    <label for="p1">Emilia</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" id="p2" name="g3">
+                    <label for="p2">Julia</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" id="p3" name="g3">
+                    <label for="p3">Maria</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-b">
+                    <a href="#n8" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio39" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio39" class="col4">
+        <div data-role="content">
+            <span>4/5</span>
+            <div class="img-disen">
+                <img src="img/grafica-4.JPG" alt="Grafica 4">
+            </div>
+            <h4 class="center">¿Cuál tema más se vendió?</h4>
+
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" id="p5" name="g4">
+                    <label for="p5">Drama</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" id="p6" name="g4">
+                    <label for="p6">Arte</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" id="preg39" name="g4">
+                    <label for="preg39">Música</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" id="p7" name="g4">
+                    <label for="p7">Danza</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n8" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio40" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" id="ejercicio40" class="col4">
+        <div data-role="content">
+            <span>5/5</span>
+            <div class="img-disen">
+                <img src="img/grafica-5.JPG" alt="Grafica 5">
+            </div>
+            <h4 class="center">¿Quién jugó más partidas de ajedrez?</h4>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" id="p8" name="g5">
+                    <label for="p8">Magda</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" id="preg40" name="g5">
+                    <label for="preg40">Ramón</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" id="p9" name="g4">
+                    <label for="p9">Elena</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" id="p10" name="g4">
+                    <label for="p10">Carlos</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-b">
+                    <a href="#n8" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nivel8resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result8()">Resultado</a>
+                </div>
+            </div>
+            <div id="nivel8resul" data-role="popup" class="ui-content col4">
+                <div data-role="content">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <h1>Su resultado es:</h1>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <h5>Correctas</h5>
+                            <h4 id="buenas8" class="center"></h4>
+                        </div>
+                        <div class="ui-block-b">
+                            <h5>Incorrectas</h5>
+                            <h4 id="malas8" class="center"></h4>
+                        </div>
+                        <div class="ui-block-c">
+                            <h5 class="center">Total</h5>
+                            <h4 class="center">5</h4>
+                        </div>
+                    </div>
+                    <a href="#ejercicio36" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Volver a intentar</a>
+                    <a href="#n8" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left" data-transition="slidedown">Final</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--nivel 9-->
+    <div data-role="page" class="col1" id="nivel9">
+        <div data-role="panel" id="infusern9" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Informacion del Usuario</h2>
+            <a href="#portada" class="ui-btn">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#n9" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slide" data-direction="reverse">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern9" class="ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h1>Polígonos</h1>
+            <p>Un polígono es una figura plana con lados rectos.</p>
+            <p>Los polígonos son formas bidimensionales. Están hechos con líneas rectas, y su forma es "cerrada" (todas las líneas están conectadas).</p>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <img src="img/p1.gif" alt="Polígono">
+                    <p>Es Polígono (lados rectos)</p>
+                </div>
+                <div class="ui-block-b">
+                    <img src="img/p2.gif" alt="No Poligono">
+                    <p>No es un polígono (tiene una curva)</p>
+                </div>
+            </div>
+            <table data-role="table" class="ui-responsive" data-mode="columntoggle" id="tblpoligono">
+                <thead>
+                    <tr>
+                        <th data-priority="1">Nombre</th>
+                        <th data-priority="1">Lados</th>
+                        <th data-priority="1">Forma</th>
+                        <th data-priority="1">Ángulo</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Triángulo</td>
+                        <td>3</td>
+                        <td><img src="img/poligonos/p1.gif" alt=""></td>
+                        <td>60°</td>
+                    </tr>
+                    <tr>
+                        <td>Cuadrilátero</td>
+                        <td>4</td>
+                        <td><img src="img/poligonos/p2.gif" alt=""></td>
+                        <td>90°</td>
+                    </tr>
+                    <tr>
+                        <td>Pentágono</td>
+                        <td>5</td>
+                        <td><img src="img/poligonos/p3.gif" alt=""></td>
+                        <td>108°</td>
+                    </tr>
+                    <tr>
+                        <td>Hexágono</td>
+                        <td>6</td>
+                        <td><img src="img/poligonos/p4.gif" alt=""></td>
+                        <td>120°</td>
+                    </tr>
+                    <tr>
+                        <td>Heptágono</td>
+                        <td>7</td>
+                        <td><img src="img/poligonos/p5.gif" alt=""></td>
+                        <td>128.571°</td>
+                    </tr>
+                    <tr>
+                        <td>Octágono</td>
+                        <td>8</td>
+                        <td><img src="img/poligonos/p6.gif" alt=""></td>
+                        <td>135°</td>
+                    </tr>
+                    <tr>
+                        <td>Nonágono</td>
+                        <td>9</td>
+                        <td><img src="img/poligonos/p7.gif" alt=""></td>
+                        <td>140°</td>
+                    </tr>
+                    <tr>
+                        <td>Decágono</td>
+                        <td>10</td>
+                        <td><img src="img/poligonos/p8.gif" alt=""></td>
+                        <td>144°</td>
+                    </tr>
+                    <tr>
+                        <td>Endecágono</td>
+                        <td>11</td>
+                        <td><img src="img/poligonos/p9.gif" alt=""></td>
+                        <td>147.273°</td>
+                    </tr>
+                    <tr>
+                        <td>Dodecágono</td>
+                        <td>12</td>
+                        <td><img src="img/poligonos/p10.gif" alt=""></td>
+                        <td>150°</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+    <!-- Ejemplo -->
+    <div data-role="page" class="col1" id="ejemplo25">
+        <div data-role="content">
+            <span>1/2</span>
+            <div class="poligono">
+                <img src="img/poligonos/preg/l5.png" alt="">
+            </div>
+            <h3 class="center">¿ El Nombre del poligono es ?</h3>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="po1" id="pol1">
+                    <label for="pol1">Endecágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="po1" id="pol2">
+                    <label for="pol2">Heptágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="po1" id="pol3">
+                    <label for="pol3">Pentágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="po1" id="pol4">
+                    <label for="pol4">Nonágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n9" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s25" data-position-to="window" data-transition="slide" onclick="ejemplo25()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta25" class="ui-content col1" data-overlay-theme="b">
+                <h1 class="center" id="cc25"></h1>
+                <a href="#ejemplo26" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt25" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col1" id="ejemplo26">
+        <div data-role="content">
+            <span>2/2</span>
+            <div class="poligono">
+                <img src="img/poligonos/preg/l7.png" alt="">
+            </div>
+            <h3 class="center">¿ El Nombre del poligono es ?</h3>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="po2" id="pol5">
+                    <label for="pol5">Endecágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="po2" id="pol6">
+                    <label for="pol6">Heptágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="po2" id="pol7">
+                    <label for="pol7">Pentágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="po2" id="pol8">
+                    <label for="pol8">Nonágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n9" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s26" data-position-to="window" data-transition="slide" onclick="ejemplo26()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta26" class="ui-content col1" data-overlay-theme="b">
+                <h1 class="center" id="cc26"></h1>
+                <a href="#n9" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt26" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" class="col1" id="ejercicio41">
+        <div data-role="content">
+            <span>1/5</span>
+            <div class="poligono">
+                <img src="img/poligonos/preg/l5.png" alt="">
+            </div>
+            <h3 class="center">¿ El Nombre del poligono es ?</h3>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p1" id="pr1">
+                    <label for="pr1">Endecágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p1" id="pr2">
+                    <label for="pr2">Heptágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p1" id="preg41">
+                    <label for="preg41">Pentágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p1" id="pr3">
+                    <label for="pr3">Nonágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n9" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio42" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col1" id="ejercicio42">
+        <div data-role="content">
+            <span>2/5</span>
+            <div class="poligono">
+                <img src="img/poligonos/preg/l11.png" alt="">
+            </div>
+            <h3 class="center">¿ El Nombre del poligono es ?</h3>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p2" id="preg42">
+                    <label for="preg42">Endecágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p2" id="pr4">
+                    <label for="pr4">Hexágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p2" id="pr5">
+                    <label for="pr5">Decágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p2" id="pr6">
+                    <label for="pr6">Octágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n9" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio43" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col1" id="ejercicio43">
+        <div data-role="content">
+            <span>3/5</span>
+            <div class="poligono">
+                <img src="img/poligonos/preg/l10.png" alt="">
+            </div>
+            <h3 class="center">¿ El Nombre del poligono es ?</h3>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p3" id="pr7">
+                    <label for="pr7">Heptágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p3" id="preg43">
+                    <label for="preg43">Decágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p3" id="pr8">
+                    <label for="pr8">Pentágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p3" id="pr9">
+                    <label for="pr9">Octágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n9" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio44" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col1" id="ejercicio44">
+        <div data-role="content">
+            <span>4/5</span>
+            <div class="poligono">
+                <img src="img/poligonos/preg/l9.png" alt="">
+            </div>
+            <h3 class="center">¿ El Nombre del poligono es ?</h3>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p4" id="pr10">
+                    <label for="pr10">Heptágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p4" id="pr11">
+                    <label for="pr11">Hexágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p4" id="pr12">
+                    <label for="pr12">Pentágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p4" id="preg44">
+                    <label for="preg44">Nonágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-b">
+                    <a href="#n9" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio45" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col1" id="ejercicio45">
+        <div data-role="content">
+            <span>5/5</span>
+            <div class="poligono">
+                <img src="img/poligonos/preg/l7.png" alt="">
+            </div>
+            <h3 class="center">¿ El Nombre del poligono es ?</h3>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p5" id="pr13">
+                    <label for="pr13">Nonágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p5" id="preg45">
+                    <label for="preg45">Heptágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="radio" name="p5" id="pr14">
+                    <label for="pr14">Pentágono</label>
+                </div>
+                <div class="ui-block-b">
+                    <input type="radio" name="p5" id="pr15">
+                    <label for="pr15">Octágono</label>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n9" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nivel9resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result9()">Resultado</a>
+                </div>
+            </div>
+            <div id="nivel9resul" data-role="popup" class="ui-content col1">
+                <div data-role="content">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <h1>Su resultado es:</h1>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <h5>Correctas</h5>
+                            <h4 id="buenas9" class="center"></h4>
+                        </div>
+                        <div class="ui-block-b">
+                            <h5>Incorrectas</h5>
+                            <h4 id="malas9" class="center"></h4>
+                        </div>
+                        <div class="ui-block-c">
+                            <h5 class="center">Total</h5>
+                            <h4 class="center">5</h4>
+                        </div>
+                    </div>
+                    <a href="#ejercicio41" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Volver a intentar</a>
+                    <a href="#n9" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left" data-transition="slidedown">Final</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- nivel 10-->
+    <div data-role="page" class="col2" id="nivel10">
+        <div data-role="panel" id="infusern10" data-position="right" data-display="overlay">
+            <a href="#" data-rel="close" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+            <h2>Informacion del Usuario</h2>
+            <a href="#portada" class="ui-btn">Cerrar Sesion</a>
+        </div>
+        <div data-role="header" data-position="fixed" data-theme="b">
+            <a href="#n10" class="ui-corner-all ui-icon-back ui-btn-icon-left ui-btn ui-btn-icon-notext" data-transition="slide" data-direction="reverse">Volver</a>
+            <h1>DG Mate</h1>
+            <a href="#infusern10" class=" ui-corner-all ui-shadow ui-btn ui-icon-user ui-btn-icon-notext ui-btn-right"></a>
+        </div>
+        <div data-role="content">
+            <h1 class="center">El Porcentaje</h1>
+            <p>El porcentaje nos dice qué parte de un total representa una cantidad. Y lo hace representando el total por el valor 100 y calculando de esos 100 cuanto correspondería a la cantidad que estamos analizando.</p>
+            <p><b>Por Ejemplo:</b></p>
+            <p>Si hay 10 coches aparcados y 3 son de color amarillo, ¿Qué porcentaje (que parte del total) representan estos 3 coches?<br> El total (los 10 coches aparcados) se considera que es el 100 por cien (se representa por 100 %).</p>
+            <p>Para calcular el porcentaje que representan los 3 coches amarillos:</p>
+            <p>Se divide el número de coches amarillos entre el total de coches y se multiplica por 100 (para expresarlo en porcentaje):</p>
+            <p class="center">3 ÷ 10 = 0,3</p>
+            <p class="center">0,3 x 100 = 30 %</p>
+            <p>Los 3 coches amarillos representan el 30% de los coches aparcados.</p>
+        </div>
+    </div>
+    <!-- Ejemplo -->
+    <div data-role="page" class="col2" id="ejemplo28">
+        <div data-role="content">
+            <span>1/2</span>
+            <h2 class="center"> 7% porciento de 35 es:</h2>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt28">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n10" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s28" data-position-to="window" data-transition="slide" onclick="ejemplo28()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta28" class="ui-content col2" data-overlay-theme="b">
+                <h1 class="center" id="cc28"></h1>
+                <a href="#ejemplo29" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt28" data-transition="slideup">Siguiente</a>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="ejemplo29">
+        <div data-role="content">
+            <span>2/2</span>
+            <h2 class="center"> 8% porciento de 20 es:</h2>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="rt29">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n10" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="" data-rel="popup" class="ui-btn ui-icon-check ui-btn-icon-left ui-corner-all" id="s29" data-position-to="window" data-transition="slide" onclick="ejemplo29()">Verificar</a>
+                </div>
+            </div>
+            <div data-role="popup" id="correcta29" class="ui-content col2" data-overlay-theme="b">
+                <h1 class="center" id="cc29"></h1>
+                <a href="#n10" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-right ui-btn" id="btnrt29" data-transition="slidedown">Final</a>
+            </div>
+        </div>
+    </div>
+    <!-- Ejercicio -->
+    <div data-role="page" class="col2" id="ejercicio46">
+        <div data-role="content">
+            <span>1/5</span>
+            <h2 class="center">En un examen han aprobado 3 alumnos de un clase de 30, ¿qué porcentaje representan?</h2>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="preg46">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all ui-btn" onclick="">
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="">Editar</a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n10" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio47" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="ejercicio47">
+        <div data-role="content">
+            <span>2/5</span>
+            <h3 class="center">Un jugador de baloncesto ha encestado 8 tiros libres de un total de 15, ¿qué porcentaje representan?</h3>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="preg47">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all ui-btn" onclick="">
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="">Editar</a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n10" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio48" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="ejercicio48">
+        <div data-role="content">
+            <span>3/5</span>
+            <h3 class="center">En un grupo de 15 amigos 10 saben hablar inglés; calcula qué porcentaje representan.</h3>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="preg48">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all ui-btn" onclick="">
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="">Editar</a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n10" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio49" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="ejercicio49">
+        <div data-role="content">
+            <span>4/5</span>
+            <h3 class="center">De un total de 60 estudiantes, 35 han elegido una carrera de ciencias; ¿qué porcentaje representan?</h3>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="preg49">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all ui-btn" onclick="">
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="">Editar</a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n10" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#ejercicio50" data-role="button" class="ui-corner-all ui-icon-arrow-r ui-btn-icon-left ui-btn" data-transition="slideup">Continuar</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div data-role="page" class="col2" id="ejercicio50">
+        <div data-role="content">
+            <span>5/5</span>
+            <h3 class="center">De un total de 30 manzanas, cristian se comé 5. ¿Que porcentaje de manzanas se comio cristian?</h3>
+            <div class="ui-grid-b">
+                <div class="ui-block-a"></div>
+                <div class="ui-block-b">
+                    <input type="number" class="input-t" id="preg50">
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <input type="button" value="Ok" data-icon="check" class="ui-corner-all ui-btn" onclick="">
+                </div>
+                <div class="ui-block-b">
+                    <a href="#" class="ui-corner-all ui-icon-edit ui-btn-icon-left ui-btn" onclick="">Editar</a>
+                </div>
+            </div>
+            <div class="ui-grid-a">
+                <div class="ui-block-a">
+                    <a href="#n10" class="ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Cancelar</a>
+                </div>
+                <div class="ui-block-b">
+                    <a href="#nivel10resul" data-rel="popup" class="ui-corner-all ui-icon-eye ui-btn-icon-left ui-btn" data-position-to="window" data-transition="slide" onclick="mostrar_result10()">Resultado</a>
+                </div>
+            </div>
+            <div id="nivel10resul" data-role="popup" class="ui-content col2">
+                <div data-role="content">
+                    <a href="#" data-rel="back" class="ui-btn ui-corner-all ui-shadow ui-btn ui-icon-delete ui-btn-icon-notext ui-btn-right">Close</a>
+                    <h1>Su resultado es:</h1>
+                    <div class="ui-grid-b">
+                        <div class="ui-block-a">
+                            <h5>Correctas</h5>
+                            <h4 id="buenas10" class="center"></h4>
+                        </div>
+                        <div class="ui-block-b">
+                            <h5>Incorrectas</h5>
+                            <h4 id="malas10" class="center"></h4>
+                        </div>
+                        <div class="ui-block-c">
+                            <h5 class="center">Total</h5>
+                            <h4 class="center">5</h4>
+                        </div>
+                    </div>
+                    <a href="#ejercicio46" class="ui-corner-all ui-btn ui-icon-refresh ui-btn-icon-left" onclick="limpiar()" data-transition="slidedown">Volver a intentar</a>
+                    <a href="#n10" class="ui-corner-all ui-btn ui-icon-check ui-btn-icon-left" data-transition="slidedown">Final</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="js/jquery/jquery-1.1.1.min.js"></script>
+    <script src="js/jquery/jquery.mobile-1.4.5.min.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/bd.js"></script>
+    <script src="js/eje.js"></script>
+</body>
+
+</html>

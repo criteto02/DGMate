@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+	<widget xmlns = "http://www.w3.org/ns/widgets"
+		xmlns:gap = "http://phonegap.com/ns/1.0"
+		id        = "com.dgMate.ctt"
+		versionCode="2.0"
+		version   = "1.0">
+		<name>DG Mate</name>
+		<content src="index.html" />
+		<description>Aprenderas de una forma didactica las operaciones basicas, la potenciación, interpretar grafica, la comparación, la clasificacion de los ángulos, los poligonos y como determinar un porcentaje. Primero con una breve explicación de su significado, algunos ejemplos para comprender mejor, también prodras hacer ejercicios de prueba, para aplicar lo aprendido.</description>
+		<author href="" email="critteto02@gmail.com">Christian Teheran Tovar - @ChristianT_T</author>
+		<preference name="orientation" value="default" />
+		<preference name="prerendered-icon" value="true" />
+		<preference name="detect-data-types" value="true" />
+		<!-- <preference name="show-splash-screen-spinner" value="true" />
+		<preference name="auto-hide-splash-screen" value="true" /> -->
+		<preference name="BackupWebStorage" value="cloud" />
+		<preference name="android-installLocation" value="internalOnly" />
+		<preference name="SplashScreenDelay" value="6000" />
+		<preference name="BackgroundColor" value="0x00FFFFFF"/>
+		<preference name="KeepRunning" value="true"/>
+		<gap:platform name="android" />
+		<!-- <plugin name="cordova-plugin-splashscreen" /> -->
+		    <icon src="icon.png" />
+        <platform name="android">
+		     <!-- <splash src="splash.png"/> -->
+        </platform>
+		<access origin="" />
+</widget>
